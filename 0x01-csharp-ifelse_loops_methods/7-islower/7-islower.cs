@@ -4,9 +4,9 @@ class Character
 {
 	public static bool IsLower(char c)
 	{
-		if (c > 64 && c < 91)
-		   	return(false);
+		if (c > 96 && c < 123)
+		   	return(true);
 		else
-			return(true);
+			return(false);
 	}
 }
