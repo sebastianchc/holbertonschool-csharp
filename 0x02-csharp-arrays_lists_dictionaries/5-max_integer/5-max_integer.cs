@@ -5,8 +5,6 @@ class List
 {
 	public static int MaxInteger(List<int> myList)
 	{
-		int max = myList[0];
-
 		if (myList == null || myList.Count == 0)
 		{
 			Console.WriteLine("List is empty");
@@ -14,6 +12,7 @@ class List
 		}
 		else
 		{
+			int max = myList[0];
 			foreach (var n in myList)
 			{
 				if (n > max)
@@ -21,7 +20,7 @@ class List
 					max = n;
 				}
 			}
+			return(max);
 		}
-		return(max);
 	}
 }
