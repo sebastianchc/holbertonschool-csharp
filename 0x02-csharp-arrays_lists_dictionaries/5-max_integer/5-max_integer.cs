@@ -7,11 +7,19 @@ class List
 	{
 		int max = myList[0];
 
-		foreach (var n in myList)
+		if (myList == null || myList.Count == 0)
 		{
-			if (n > max)
+			Console.WriteLine("List is empty");
+			return(-1);
+		}
+		else
+		{
+			foreach (var n in myList)
 			{
-				max = n;
+				if (n > max)
+				{
+					max = n;
+				}
 			}
 		}
 		return(max);
