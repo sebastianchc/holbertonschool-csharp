@@ -6,22 +6,14 @@ class LList
 	public static int GetNode(LinkedList<int> myLList, int n)
 	{
 		int idx = 0;
-		if (n >= myLList.Count || n < 0)
+		foreach (int i in myLList)
 		{
-			return 0;
-		}
-		else
-		{
-			foreach (int i in myLList)
+			if (idx == n)
 			{
-				if (idx == n)
-				{
-					idx = i;
-					break;
-				}
-				idx++;
+				return i;;
 			}
-			return idx;
+			idx++;
 		}
+		return 0;
 	}
 }
