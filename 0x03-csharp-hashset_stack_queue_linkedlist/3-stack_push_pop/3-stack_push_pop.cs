@@ -7,7 +7,14 @@ class MyStack
 	{
 		string ward;
 		Console.WriteLine("Number of items: {0}", aStack.Count);
-		Console.WriteLine("Top item: {0}", aStack.Peek());
+		if (aStack.Count == 0)
+		{
+			Console.WriteLine("Stack is empty");
+		}
+		else
+		{
+			Console.WriteLine("Top item: {0}", aStack.Peek());
+		}
 		if (aStack.Contains(search))
 		{
 			Console.WriteLine("Stack contains \"{0}\": True", search);
