@@ -6,16 +6,10 @@ class List
 	public static int Sum(List<int> myList)
 	{
 		int sum = 0;
-		for (int i = 0; i < myList.Count; i++)
+		HashSet<int> listUnique = new HashSet<int>(myList);
+		foreach (int num in listUnique)
 		{
-			for (int j = i + 1; j < myList.Count; j++)
-			{
-				if (myList[i] == myList[j])
-				{
-					myList.Remove(myList[j]);
-				}
-			}
-			sum = sum + myList[i];
+			sum = sum + num;
 		}
 		return sum;
 	}
