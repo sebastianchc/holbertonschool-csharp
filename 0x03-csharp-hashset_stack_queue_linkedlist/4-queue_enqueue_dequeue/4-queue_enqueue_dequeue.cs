@@ -13,7 +13,7 @@ class MyQueue
 		}
 		else
 		{
-			Console.WriteLine("Top item: {0}", aQueue.Peek());
+			Console.WriteLine("First item: {0}", aQueue.Peek());
 		}
 		aQueue.Enqueue(newItem);
 		if (aQueue.Contains(search))
