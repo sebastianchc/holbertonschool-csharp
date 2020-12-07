@@ -5,7 +5,7 @@ class Dictionary
 {
 	public static string BestScore(Dictionary<string, int> myList)
 	{
-		int maxScore = 0;
+		int maxScore = -1;
 		string player = null;
 		if (myList.Count == 0)
 		{
