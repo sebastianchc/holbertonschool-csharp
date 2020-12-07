@@ -12,7 +12,7 @@ class LList
 			myLList.AddFirst(newNode);
 			return newNode;
 		}
-		while (headNode.Next != null)
+		while (headNode != null)
 		{
 			if (headNode.Value > n)
 			{
