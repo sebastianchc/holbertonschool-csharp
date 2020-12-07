@@ -7,6 +7,10 @@ class Dictionary
 	{
 		int maxScore = 0;
 		string player = null;
+		if (myList.Count == 0)
+		{
+			return "None";
+		}
 		foreach (string i in myList.Keys)
 		{
 			if (myList[i] > maxScore)
